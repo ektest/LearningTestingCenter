@@ -1,0 +1,13 @@
+2016-02-08 14:43:31,188 ERROR l.Main [main] test 
+2016-02-08 14:46:33,428 ERROR l.Main [main] test 
+2016-02-08 14:46:33,430 FATAL l.AnotherClass [main] fatal 
+2016-02-08 14:46:33,430 INFO l.AnotherClass [main] info 
+2016-02-08 14:53:52,599 ERROR l.Main [main] test 
+2016-02-08 14:53:52,601 FATAL l.AnotherClass [main] fatal 
+2016-02-08 14:53:52,601 INFO l.AnotherClass [main] info 
+2016-02-08 14:55:02,200 ERROR l.Main [main] test 
+2016-02-08 14:55:02,202 FATAL l.AnotherClass [main] fatal 
+2016-02-08 14:55:02,202 INFO l.AnotherClass [main] info 
+2016-02-08 14:57:41,616 ERROR l.Main [main] test 
+2016-02-08 14:57:41,618 FATAL l.AnotherClass [main] fatal 
+2016-02-08 14:57:41,618 INFO l.AnotherClass [main] info 
