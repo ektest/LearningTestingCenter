@@ -10,6 +10,7 @@ public class Main {
 		printObject(worker2);
 		System.out.println(StringWorker.getString("Hello", 123));
 		System.out.println(getFirstObject(worker));
+		System.out.println(worker.getString3("Hello", "Hello"));
 	}
 
 	public static <T, U> void printObject(StringWorker<T, U> worker) {

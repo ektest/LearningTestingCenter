@@ -14,11 +14,15 @@ public class StringWorker<T,U> {
 	}
 
 	public static <A,B> String getString(A o1, B o2){
-		return "StringWorker [o1=" + o1 + ", o2=" + o2 + "]";
+		return "[o1=" + o1 + ", o2=" + o2 + "]";
 	}
 
 	public static <A> String getString2(A o1, A o2){
-		return "StringWorker [o1=" + o1 + ", o2=" + o2 + "]";
+		return "[o1=" + o1 + ", o2=" + o2 + "]";
+	}
+
+	public String getString3(T o1, U o2){
+		return "[o1=" + o1 + ", o2=" + o2 + "]";
 	}
 
 	@Override
