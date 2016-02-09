@@ -8,8 +8,10 @@ public class Main {
 		StringWorker<String, Integer> worker2 = new StringWorker<String, Integer>("A", 123);
 		worker2.toString();
 		printObject(worker2);
+		System.out.println(StringWorker.getString("Hello", 123));
 	}
-	public static <T, U> void printObject(StringWorker<T,U> worker){
+
+	public static <T, U> void printObject(StringWorker<T, U> worker) {
 		System.out.println(worker.toString());
 	}
 }
