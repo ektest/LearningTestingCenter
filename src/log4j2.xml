@@ -11,7 +11,9 @@
 		</Console>
 	</Appenders>
 	<Loggers>
-		<Logger name="logging.Main" level="TRACE" additivity="FALSE"> <!-- The additivity don't repeat log entries -->
+		<Logger name="logging.Main" level="TRACE" additivity="FALSE">
+			<!-- The additivity don't apply this parent logger so log entries does 
+				not duplicate -->
 			<AppenderRef ref="STDOUT" /> <!-- TRACE or greater like ERROR, FATAL, INFO etc... -->
 		</Logger>
 		<Root level="INFO">

@@ -9,6 +9,9 @@ public class AnotherClass {
 
 	public void test() {
 		logger.log(Level.FATAL, "fatal");
-		logger.log(Level.INFO, "info");
+		if (logger.isInfoEnabled())
+			logger.log(Level.INFO, "info");
+		else if (logger.isTraceEnabled())
+			logger.trace("trace");
 	}
 }
