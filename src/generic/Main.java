@@ -9,9 +9,14 @@ public class Main {
 		worker2.toString();
 		printObject(worker2);
 		System.out.println(StringWorker.getString("Hello", 123));
+		System.out.println(getFirstObject(worker));
 	}
 
 	public static <T, U> void printObject(StringWorker<T, U> worker) {
 		System.out.println(worker.toString());
+	}
+
+	public static <T, U> T getFirstObject(StringWorker<T, U> worker) {
+		return worker.getO1();
 	}
 }
