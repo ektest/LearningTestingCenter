@@ -9,10 +9,9 @@ public class Dealer {
 		System.out.println("Welcome to Pisti! I am your dealer :)");
 	}
 
-	public Dealer createDeck() {
+	public void createDeck() {
 		System.out.println("Creating new deck...");
 		this.deck = new Deck();
-		return this;
 	}
 
 	public List<Player> dealCards(List<Player> players) {
@@ -21,6 +20,11 @@ public class Dealer {
 		// deal cards to hands
 		do {
 			for (Player player : players) {
+				if(this.deck.getCards().isEmpty())
+				{
+					System.out.println("No cards!");
+					return null;
+				}
 				player.getHand().getCards().add(deck.drawFromDeck());
 			}
 		} while (counter++ < 3);

@@ -1,5 +1,7 @@
 package com.pisti.model;
 
+import com.pisti.domain.Card;
+
 public class Player {
 	private int id;
 	private String name;
@@ -19,12 +21,16 @@ public class Player {
 	}
 
 	public Hand getHand() {
-		return hand;
+		return this.hand;
 	}
 
 	@Override
 	public String toString() {
 		return "Player [id=" + id + ", name=" + name + ", age=" + age + ", hand=" + hand + "]";
+	}
+
+	public Card playCard() {
+		return this.hand.getCards().remove((int)Math.random() *10 % 10);
 	}
 
 }

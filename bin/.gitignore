@@ -1,6 +1,9 @@
-/logging/
-/log4j2.xml
-/log4j2.out.xml
-/generic/
-/performance/
 /com/
+/generic/
+/log4j2.xml
+/logging/
+/performance/
+/sortingObjects/
+/sortingStrings/
+/lambda/
+/lambdas/
