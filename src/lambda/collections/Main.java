@@ -1,11 +1,5 @@
 package lambda.collections;
 
-import java.util.List;
-import java.util.function.Function;
-import java.util.function.ToDoubleFunction;
-
-import javax.xml.ws.handler.MessageContext.Scope;
-
 //Functional Interfaces
 //Category    | Parameters    | Return                | Method
 //Consumer    | Yes           | No                    | accept()
@@ -19,5 +13,15 @@ public class Main {
         ex.PrintScores();
         System.out.println("####");
         ex.PrintSelectedScores(s -> s >= 78.5);
+        System.out.println("####");
+        ex.PrintSelectedScores(Main::isItLowerthan78AndHalf);
+    }
+
+    // This is regular java method but like predicate so we can use this as
+    // lambda exp see above
+    private static Boolean isItLowerthan78AndHalf(Double d) {
+        if (d < 78.5)
+            return true;
+        return false;
     }
 }
